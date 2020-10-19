@@ -1,0 +1,37 @@
+/* min height of main content */
+.section.section-search {
+	min-height: 95vh;
+}
+
+/* auto resize page */
+body {
+	display: flex;
+	min-height: 100vh !important;
+	flex-direction: column;
+}
+
+/* auto resize page */
+main {
+	flex: 1 0 auto;
+}
+
+/* size of GO button */
+.btn {
+	width: 25%;
+}
+
+/* active color of search bar */
+input:focus {
+	border-bottom: 1px solid #2196f3 !important;
+	box-shadow: 0 1px 0 0 #2196f3 !important;
+}
+
+/* active color of search icon */
+i.active {
+	color: #2196f3 !important;
+}
+
+/* font size of search bar */
+input[type='text'] {
+	font-size: 2rem !important;
+}

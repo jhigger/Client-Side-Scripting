@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitename</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar-fixed">
+        <!-- Color of navigation bar -->
+        <nav class="grey darken-3">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- logo -->
+                    <a href="index.html" class="brand-logo">LOGO</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger ">
+                        <!-- Icon for sidenav -->
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- Puts cursor on search bar on click -->
+                        <li><a href="#search" onclick="document.getElementById('input').focus()">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile version for navigation -->
+    <ul class="sidenav grey darken-4" id="mobile-nav">
+        <li><a href="#search" class="white-text sidenav-close"
+                onclick="document.getElementById('input').focus()">Search</a></li>
+    </ul>
+
+    <!-- Search -->
+    <main id="search" class="section section-search grey darken-4 white-text center valign-wrapper scrollspy">
+        <div class="container">
+            <div class="row">
+                <!-- Sitename -->
+                <h1 class="blue-text">Sitename</h1>
+                <!-- Tagline -->
+                <h6 class="grey-text flow-text">
+                    Tagline Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h6>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <!-- Search bar -->
+                    <div class="input-field col s12 ">
+                        <input id="input" onfocus="value = ''" spellcheck="false" type="text"
+                            class="white-text center-align">
+                        <!-- Search icon -->
+                        <i class="material-icons prefix">search</i>
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="row">
+                <button id="go" class="btn z-depth-1 waves-effect waves-light blue darken-1 btn-large center-align"
+                    type="submit" name="action" onclick="searchByName()">Go
+                </button>
+            </div>
+            <!-- Reserved space for search results -->
+            <div id="results" class="row"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <ul>
+                        <li>
+                            <h5 class="white-text">Developers</h5>
+                        </li>
+                        <li>Jose</li>
+                        <li>Mari</li>
+                        <li>Chan</li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <!-- Links -->
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2020 Copyright Sitename
+                <!-- link for the API that was used -->
+                <a class="grey-text text-lighten-4 right" target="_blank"
+                    href="https://www.thecocktaildb.com/api.php">API</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript for MaterializeCSS initialization-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
